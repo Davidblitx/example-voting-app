@@ -25,6 +25,9 @@ FROM base AS final
 # Copy our code from the current folder to the working directory inside the container
 COPY . .
 
+RUN useradd --system --uid 10001 --no-create-home appuser
+USER 10001
+
 # Make port 80 available for links and/or publish
 EXPOSE 80
 

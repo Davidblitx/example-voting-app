@@ -18,6 +18,8 @@ RUN npm ci && \
 
 COPY . .
 
+USER node
+
 ENV PORT=80
 EXPOSE 80
 
