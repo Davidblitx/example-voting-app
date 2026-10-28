@@ -4,6 +4,8 @@ Fork of [dockersamples/example-voting-app](https://github.com/dockersamples/exam
 
 One push to `main` now tests, scans, builds, pushes and deploys the app. The whole environment can be destroyed and rebuilt from code in about 10 minutes.
 
+**Starting point:** the Terraform, Helm chart, pipeline and worker Dockerfile began from a community starter kit shared in the cohort with the instructor's approval. I customised the cluster size and Kubernetes version, the chart values and templates, the pipeline jobs, and the container hardening.
+
 ## Architecture
 
 ```mermaid
